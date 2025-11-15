@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Habit &amp; Health Logger – Login</title>
+  <title>Habit & Health Logger – Login</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body class="auth-body">
   <div class="auth-layout">
-
+    <!-- Left: login card -->
     <main class="auth-card">
       <h1 class="app-title">Habit &amp; Health Logger</h1>
       <p class="app-subtitle">Log your day. Let AI do the analysis.</p>
 
-      <p>Login form</p>
       <form class="auth-form" id="login-form">
         <div class="form-group">
           <label for="email">Email</label>
@@ -40,11 +39,13 @@
         <button type="submit" class="btn-primary">Log in</button>
 
         <div class="auth-links">
+          <a href="#" class="auth-link">Don’t have an account? Sign up</a>
           <a href="#" class="auth-link">Forgot password?</a>
         </div>
       </form>
     </main>
 
+    <!-- Right: marketing panel -->
     <aside class="auth-side">
       <h2>Track habits, sleep, and caffeine</h2>
       <ul>
@@ -54,5 +55,7 @@
       </ul>
     </aside>
   </div>
+
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
