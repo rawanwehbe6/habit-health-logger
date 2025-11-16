@@ -47,9 +47,70 @@
 
       </header>
 
-      <section class="dashboard-grid">
-        <p>Cards</p>
-      </section>
+    <section class="dashboard-grid">
+
+    <section class="card card--wide" id="card-log-today">
+      <h2 class="card-title">Describe your day in one sentence :</h2>
+
+      <form id="log-form" class="log-form">
+        <textarea
+          id="log-text"
+          class="log-textarea"
+          rows="3"
+          placeholder="e.g. walked 25 min, 2 coffees, slept at 01:30"
+        ></textarea>
+        <div class="log-actions">
+          <button type="submit" class="btn-primary">Save entry</button>
+          <button type="button" class="btn-ghost">Use AI to parse</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card" id="card-today">
+      <h2 class="card-title">Today’s snapshot</h2>
+      <ul class="metrics-list">
+        <li><span>Sleep</span><strong>–</strong></li>
+        <li><span>Activity</span><strong>–</strong></li>
+        <li><span>Caffeine</span><strong>–</strong></li>
+        <li><span>Entries</span><strong>–</strong></li>
+      </ul>
+    </section>
+
+    <section class="card card--wide" id="card-weekly">
+      <h2 class="card-title">Weekly progress</h2>
+      <div class="chart-placeholder">
+        Weekly chart
+      </div>
+    </section>
+
+    <section class="card" id="card-ai-summary">
+      <h2 class="card-title">AI weekly summary</h2>
+      <p class="card-text">
+        week’s summary will appear here when we connect the AI
+      </p>
+    </section>
+
+    <section class="card" id="card-nutrition">
+      <h2 class="card-title">Nutrition coach</h2>
+
+      <form id="nutrition-form" class="nutrition-form">
+        <textarea
+          id="nutrition-text"
+          class="log-textarea"
+          rows="3"
+          placeholder="e.g. I had a croissant for breakfast, what should I eat for lunch?"
+        ></textarea>
+        <div class="log-actions">
+          <button type="submit" class="btn-primary">Ask coach</button>
+        </div>
+      </form>
+
+      <p class="card-text">
+        Coach responses will appear here
+      </p>
+    </section>
+  </section>
+
     </main>
   </div>
  
