@@ -9,9 +9,50 @@
 </head>
 
 <body class="dashboard-body">
-  <h1>Dashboard</h1>
-  <p>Dashboard layout</p>
+  <div class="dashboard-layout">
 
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-logo"></span>
+        <span class="sidebar-app-name">Habit &amp; Health</span>
+      </div>
+
+    <nav class="sidebar-nav">
+        <a href="#" class="sidebar-link sidebar-link--active">Dashboard</a>
+        <a href="#" class="sidebar-link">Entries</a>
+    </nav>
+    
+    <div class="sidebar-footer">
+        <div class="sidebar-user">
+          <div class="sidebar-avatar">U</div>
+          <div class="sidebar-user-info">
+            <span class="sidebar-user-name">User</span>
+            <span class="sidebar-user-email">user@example.com</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-header">
+
+        <div>
+          <h1 class="dashboard-title">Dashboard</h1>
+          <p class="dashboard-subtitle">Overview of your habits and health.</p>
+        </div>
+
+        <div class="dashboard-header-right">
+          <button class="btn-ghost">This week</button>
+        </div>
+
+      </header>
+
+      <section class="dashboard-grid">
+        <p>Cards</p>
+      </section>
+    </main>
+  </div>
+ 
   <script src="assets/scripts/app.js"></script>
 </body>
 
