@@ -35,11 +35,6 @@ body {
   padding: 48px;
 }
 
-.auth-side {
-  width: 300px;
-  padding: 40px 32px;
-}
-
 .app-title {
   margin: 0;
   font-size: 27px;
@@ -126,8 +121,8 @@ body {
 .auth-side {
   width: 300px;
   padding: 40px 32px;
-  background: #E0F2FE;           
-  border-left: 1px solid #BAE6FD;
+  background: #0F172A;    
+  border-left: 1px solid #1E293B;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,19 +133,20 @@ body {
   margin: 0;
   font-size: 21px;
   font-weight: 600;
-  color: #0369A1;
+  color: #E2E8F0; 
 }
 
 .auth-side ul {
   margin: 0;
   padding-left: 20px;
-  color: #3F3F46;
+  color: #CBD5E1;
   font-size: 14px;
 }
 
 .auth-side li::marker {
-  color: #A3E635; /* lime accent */
+  color: #0EA5E9; 
 }
+
 
 @media (max-width: 900px) {
   .auth-layout {
