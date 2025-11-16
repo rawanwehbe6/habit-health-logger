@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Habit &amp; Health Logger – Entries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <link rel="stylesheet" href="assets/styles/dashboard.css" />
+  <link rel="stylesheet" href="assets/styles/entries.css" />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-logo"></span>
+        <span class="sidebar-app-name">Habit &amp; Health</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="sidebar-link">Dashboard</a>
+        <a href="entries.html" class="sidebar-link sidebar-link--active">Entries</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-user">
+          <div class="sidebar-avatar">U</div>
+          <div class="sidebar-user-info">
+            <span class="sidebar-user-name">User</span>
+            <span class="sidebar-user-email">user@example.com</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-header">
+        <div>
+          <h1 class="dashboard-title">Entries</h1>
+          <p class="dashboard-subtitle">Take a look at your habit &amp; health logs.</p>
+        </div>
+      </header>
+
+    <section class="card card--wide entries-list-card">
+    <h2 class="card-title">Entries</h2>
+
+    <table class="entries-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Raw text</th>
+          <th>Parsed summary</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>2025-01-15</td>
+          <td>09:30</td>
+          <td>walked 25 min, 2 coffees, slept at 01:30</td>
+          <td>25 min walking · 2 coffees · sleep at 01:30</td>
+          <td><span class="entry-badge">Parsed</span></td>
+        </tr>
+        <tr>
+          <td>2025-01-14</td>
+          <td>23:45</td>
+          <td>pizza for dinner, slept 5h</td>
+          <td>5h sleep · high-calorie dinner</td>
+          <td><span class="entry-badge">Parsed</span></td>
+        </tr>
+        <tr>
+          <td>2025-01-14</td>
+          <td>08:10</td>
+          <td>too tired to log</td>
+          <td>–</td>
+          <td><span class="entry-badge" style="background:#FEE2E2;color:#991B1B;">Raw</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+    </main>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
