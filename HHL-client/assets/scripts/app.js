@@ -24,7 +24,7 @@ function setupLoginForm() {
 
     try {
       const response = await fetch(
-  "http://localhost/habit-health-logger/HHL-server/login.php",
+   "http://localhost/habit-health-logger/HHL-server/index.php?route=login",
   {
     method: "POST",
     headers: {
