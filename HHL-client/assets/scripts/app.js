@@ -23,7 +23,7 @@ function setupLoginForm() {
     }
 
     try {
-      const response = await fetch("../HHL-server/login.php?action=login", {
+      const response = await fetch("../HHL-server/index.php?action=login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
