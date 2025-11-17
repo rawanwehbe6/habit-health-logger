@@ -146,6 +146,11 @@ body {
 .auth-side li::marker {
   color: #0EA5E9; 
 }
+.auth-error {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #B91C1C; 
+}
 
 
 @media (max-width: 900px) {
