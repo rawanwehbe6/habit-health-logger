@@ -23,13 +23,16 @@ function setupLoginForm() {
     }
 
     try {
-      const response = await fetch("../HHL-server/index.php?action=login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
+      const response = await fetch(
+  "http://localhost/habit-health-logger/HHL-server/login.php",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email, password }),
+  }
+);
 
       const data = await response.json();
 
